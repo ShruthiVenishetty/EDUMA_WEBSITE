@@ -1,0 +1,112 @@
+<app-header></app-header>
+<div class="grid mt-5">
+      <div class="row m-3">
+        <div class="col-lg-4 mb-3" *ngFor="let courses of this.resultArray">
+
+          <div class="card" (click)="cardDescription(courses.courseId)">
+            <img src={{courses.imageUrl}} class="card-img-top" alt="Background Image">
+            <div class="text-center mb-0"><img alt="Anthony" src={{courses.profilePicUrl}} class="DP" height="50" width="50"><h6 class="card-title pt-3 pl-3">{{courses.instructorName}}</h6></div>
+              <div class="card-body">
+                <h5 class="card-title text-center coursename">{{courses.courseName}}</h5>
+                <hr>
+                <div class="people text-muted">
+                  <i class="fa fa-group"></i>&nbsp;{{courses.studentCount}}
+                </div>
+                <div class="comment text-muted">
+                    <i class="fa fa-comment"></i>&nbsp;{{courses.commentsCount}}
+                </div>
+                <div class="free" *ngIf="!courses.actualPrice">Free
+                </div>
+                <div *ngIf="courses.actualPrice && courses.discountedPrice"><h6 class="currency"><s>{{courses.actualPrice | currency}}</s>{{courses.discountedPrice | currency}}</h6>
+                </div>
+                <div class="nodiscount" *ngIf="courses.actualPrice && !courses.discountedPrice"><h6>{{courses.actualPrice | currency}}</h6>
+                </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+<form>
+  <div class="rightside form-group">
+    <h3 class="filter-title ">Course Categories</h3>
+    <ul class="list-cate-filter list-unstyled allcourses">
+      <li class="term-item" *ngFor="let category of this.categoryList; let i =index">
+      <input type="checkbox" class="gap"  [attr.checked]="category.checked == true ? true : null"
+      (change)="category.checked = !category.checked">
+      <label for="backend_36">{{category.categoryName}} <span>({{category.categoryCount}})</span>
+      </label>
+      </li>
+
+      </ul>
+      <h3 class="filter-title ">Instructors</h3>
+      <ul class="list-instructor-filter list-unstyled allcourses">
+        <li class="instructor-item" *ngFor="let instructor of this.instructorList">
+        <input type="checkbox" [attr.checked]="instructor.checked == true ? true : null"
+        (change)="instructor.checked = !instructor.checked">
+        <label for="instructor-id_12">
+        {{instructor.instructorName}} <span>({{instructor.instructorCount}})</span>
+        </label>
+        </li>
+
+        </ul>
+        <h3 class="filter-title ">Price</h3>
+        <mat-radio-group  class="example-radio-group" [(ngModel)]="priceValue" [ngModelOptions]="{standalone: true}">
+          <mat-radio-button class="example-radio-button" value="All">
+          All <span>({{this.listCourse.length}})</span>
+        </mat-radio-button>
+        <mat-radio-button class="example-radio-button" value="Paid">
+          Paid <span>({{this.paidCount}})</span>
+        </mat-radio-button>
+        <mat-radio-button class="example-radio-button" value="Free">
+          Free  <span>({{this.freeCount}})</span>
+        </mat-radio-button>
+      </mat-radio-group>
+        <!-- <ul class="list-price-filter list-unstyled allcourses">
+          <li>
+          <input type="radio" id="price-filter_all" value="All" checked="">
+          <label for="price-filter_all">
+          All <span>({{this.listCourse.length}})</span>
+          </label>
+          </li>
+          <li>
+          <input type="radio" id="price-filter_free" value="Free">
+          <label for="price-filter_free">Free
+           <span>({{this.freeCount}})</span>
+          </label>
+          </li>
+          <li>
+          <input type="radio" id="price-filter_paid" value="Paid">
+          <label for="price-filter_paid">Paid
+            <span>({{this.paidCount}})</span>
+          </label>
+          </li>
+          </ul> -->
+          <div class="filter-submit text-center mb-5">
+            <button type="submit" (click)="onSubmitedForm()">Filter Results</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- <h3 class="filter-title">All Courses</h3>
+        <ul class="list-unstyled allcourses" *ngFor="let categories of service.categoryList">
+          <li class="li">{{categories.categoryName}}</li>
+        </ul> -->
+</div>
+       <div class="container d-flex justify-content mt-5">
+      <pagination
+        [directionLinks]="false"
+       [totalItems]="this.listCourse.length"
+       [itemsPerPage]="6"
+       (pageChanged)="pageChange($event)" class="my-pagination"
+       >
+
+      </pagination>
+      </div>
+     <!-- <nav class="learn-press-pagination navigation pagination">
+        <ul class="page-numbers">
+          <li><span aria-current="page" class="page-numbers current">1</span></li>
+          <li><a class="page-numbers" href="https://eduma.thimpress.com/demo-2/courses/page/2/">2</a></li>
+          <li><a class="next page-numbers" href="https://eduma.thimpress.com/demo-2/courses/page/2/"><i class="fas fa-angle-right"></i></a></li>
+        </ul>
+
+      </nav> -->

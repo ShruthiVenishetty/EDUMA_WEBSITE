@@ -1,0 +1,154 @@
+.people, .comment
+{
+  float: left;
+  width:20%;
+}
+.free{
+  float: right;
+  width: 20%;
+  color: lightgreen;
+  font-weight: bold;
+}
+.nodiscount{
+  float: right;
+  width: 20%;
+  color: red;
+
+}
+.currency{
+  float: right;
+  width: 40%;
+  color: red;
+}
+/* .row{
+  width:75%;
+} */
+.DP{
+  margin-top: -28px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 3;
+}
+.rightfilters{
+  width:15%;
+  float: right;
+}
+/* .my-pagination::ng-deep .page-item .page-link {
+color: black;
+border-radius: 100px;
+margin: 20px;
+background-color: white !important;
+
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+ }
+.my-pagination::ng-deep .page-item.active .page-link {
+color: white;
+margin: 20px;
+border-radius: 200px;
+background-color: #1ea69a !important;
+border-color:#1ea69a !important;
+ } */
+.pagination {
+  text-align: left;
+}
+.loop-pagination, .pagination, .learn-press-pagination {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 60px;
+}
+.learn-press-pagination{
+  padding-bottom: 20px;
+}
+.learn-press-pagination .pagination{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  list-style: none;
+}
+ul{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 10px;
+  padding-inline-start: 10px;
+}
+.grid{
+  display:grid;
+  grid-template-columns: 75% 24%;
+}
+.thim-course-filter{
+  position: relative;
+  margin-bottom: 20px;
+}
+.rightside{
+  border: solid 1px #e5e5e5;
+}
+.filter-title{
+/* margin:10px 0px 20px; */
+margin-left: 10px;
+margin-top: 10px;
+font-size: 20px;
+font-family: 'Roboto Slab';
+color:#333333;
+font-weight: bold;
+
+}
+input{
+ width:7%;
+ background-color: blue;
+}
+input[type=submit], button {
+  padding: 5px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 30px;
+  border: 0;
+  background-color: #ffb606;
+}
+/* input[type=radio]
+{
+  background-color: #ffb606;
+} */
+.allcourses{
+  font-size: 15px;
+  font-family: 'Roboto Slab';
+  color:#666666;
+  font-weight: bold;
+}
+.h4{
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  color:#333333;
+}
+.li{
+  padding-bottom: 5px;
+}
+.coursename{
+  font-family: 'Roboto Slab';
+  font-size: 16px;
+  color: #333333;
+}
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 5px;
+}
+.example-radio-button {
+  margin: 5px;
+}
+@media only screen and (max-width:550px)
+{
+  .grid{
+    display:grid;
+    grid-template-columns: auto;
+  }
+}
+

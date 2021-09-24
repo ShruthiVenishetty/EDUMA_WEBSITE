@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="event mt-5"  *ngFor="let eve of this.eventList">
+  <div class="eve">
+  <div class="left">
+      <div><h1 class="headings">{{eve.startDate | date:'dd'}}</h1></div>
+      <div><p class="heading2">{{eve.startDate | date:'MMMM'}}</p></div>
+  </div>
+  <div class="vl left">
+  </div>
+
+  <div class="right">
+      <img src={{eve.imageUrl}} height="120"width="230">
+  </div>
+  <div class="nextleft">
+    <h4 class="headd">{{eve.eventName}}</h4>
+  <p class="text-muted loc">
+      <i class="fa fa-clock-o"></i> {{eve.startDate| date: 'shortTime'}} - {{eve.endDate| date: 'shortTime'}}
+      <i class="fa fa-map-marker"></i> {{eve.location}}
+    </p>
+ <p>{{eve.about}}</p>
+</div>
+</div>
+</div>
+

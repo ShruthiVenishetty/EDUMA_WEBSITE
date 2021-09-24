@@ -1,0 +1,43 @@
+  <app-header></app-header>
+  <div class="text-center">
+    <h1>OUR STORY</h1>
+    <p>It is a long established fact that a reade.</p>
+    <p class="line"></p>
+  </div>
+  <div class="container">
+    <carousel [noWrap]="noWrapSlides" [showIndicators]="showIndicator">
+      <slide *ngFor="let slide of slides;">
+          <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+
+      </slide>
+    </carousel>
+  </div>
+  <div class="container textmsg text-center">
+    <h3>“Cras tristique turpis justo, eu consequat sem adipiscing ut. Donec posuere bibendum metus.”</h3>
+    <p>Tony Nguyen, Co-Founder</p>
+  </div>
+  <p class="lastline"></p>
+  <div class="container">
+    <div class="divide">
+
+        <div class="divideContact">
+          <div class="aboutline"><h2 class="aboutfont"> WHO WE ARE</h2></div>
+          <div><p class="abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque quis eros lobortis, vestibulum turpis ac, pulvinar odio.
+            Praesent vulputate a elit ac mollis. In sit amet ipsum turpis. Pellentesque venenatis,
+            libero vel euismod lobortis, mi metus luctus augue, eget dapibus elit nisi eu massa.
+            Phasellus sollicitudin nisl posuere nibh ultricies, et fringilla dui gravida.</p>
+            <p class="abouttext">Donec iaculis adipiscing neque, non congue massa euismod quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+        </div>
+        <div class="divideInfo">
+          <div class="aboutline"><h2 class="aboutfont"> WHAT WE DO</h2></div>
+          <div><p class="abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros lobortis, vestibulum turpis ac, pulvinar odio. Praesent vulputate a elit ac mollis. In sit amet ipsum turpis.</p>
+        <p class="abouttext">
+          Pellentesque venenatis, libero vel euismod lobortis, mi metus luctus augue, eget dapibus elit nisi eu massa. Phasellus sollicitudin nisl posuere nibh ultricies, et fringilla dui gravida. Donec iaculis adipiscing neque, non congue massa euismod quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+

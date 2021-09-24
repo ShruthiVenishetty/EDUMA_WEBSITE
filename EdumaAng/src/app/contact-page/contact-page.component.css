@@ -1,0 +1,84 @@
+.contactinfo{
+  font-family:'Roboto Slab';
+  font-weight: bold;
+}
+.line{
+  border-bottom: 2px solid black;
+  width: 4%;
+
+}
+.font{
+  font-family:'Roboto Slab';
+  font-weight: bold;
+}
+i{
+  color: orange;
+}
+.addr{
+  width: calc( 100% - 50px - 100px);
+}
+.iconbox-left .content-inner {
+  float: left;
+}
+.bold{
+  font-weight: bold;
+}
+.divide{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width:100%;
+  height: 80vh;
+  margin-top: 8%;
+}
+.divideContact{
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+.divideInfo{
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+
+}
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width:500px)
+{
+  .divide{
+    display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  height: fit-content;
+  margin-top: 8%;
+
+  }
+  .divideContact{
+
+   grid-column-start: 1;
+   grid-column-end: 2;
+  }
+  .divideInfo{
+grid-column-start: 1;
+grid-column-end: 2;
+
+
+  }
+  .submit{
+    margin-bottom: 5%;
+  }
+}

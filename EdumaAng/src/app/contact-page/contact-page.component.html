@@ -1,0 +1,51 @@
+<app-header></app-header>
+<hr>
+<div class="container">
+  <div class="divide">
+
+    <div class="divideContact">
+      <!-- <div class="ml-5"> -->
+      <h2 class="contactinfo">CONTACT INFO</h2>
+      <p class="text-muted">Welcome to our Website. We are glad to have you around.</p>
+      <p class="line"></p>
+
+      <div class="row">
+
+        <div class="col-md-6">
+        <h5 class="font"><i class="fa fa-phone"></i> Phone</h5>
+        <p class="text-muted">+7(800)123 45 69</p>
+        </div>
+
+        <div class="col-md-6">
+          <h5 class="font"><i class="fa fa-envelope"></i> Email</h5>
+          <p class="text-muted">hello@eduma.com</p>
+        </div>
+
+
+        <div class="col-md-12">
+          <h5 class="font"><i class="fa fa-map-marker"></i> Address</h5>
+          <p class="text-muted">PO Box 97845 Baker st. 567, Los Angeles, California, US.</p>
+        </div>
+
+      </div>
+    <!-- </div> -->
+    </div>
+    <div class="divideInfo">
+      <h2 class="contactinfo">SEND A MESSAGE</h2>
+      <p class="text-muted">Your email address will not be published. Required fields are marked.</p>
+      <p class="line"></p>
+      <div class="container">
+      <form [formGroup]="addForm" (submit)="onSubmit()">
+
+        <input type="text" class="col-lg-12" placeholder="Name*" id="name">
+        <input type="text" class="col-lg-12" placeholder="Email*" id="email">
+        <input type="text" class="col-lg-12" placeholder="Subject*" id="subject">
+        <textarea type="text" class="col-lg-12" placeholder="Message*" id="message"></textarea>
+        <input type="submit" value="Submit" class="btn-warning submit">
+      </form>
+      <div *ngIf="isSuccess && display"><p>Your message was sent successfully. Thanks.</p></div>
+      <div *ngIf="!isSuccess && display"><p>Validation errors occurred. Please confirm the fields and submit it again.</p></div>
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,589 @@
+a
+{
+  color: black;
+}
+.yellowDiv
+{
+  font-family:'Roboto Slab';
+  padding: 100px;
+  background-size: cover;
+  color: black;
+  background: linear-gradient( rgba(228, 154, 18,0.9) 0%,rgba(228, 154, 18, 0.9) 100%), url('https://cdn.theseattleschool.edu/wp-content/uploads/2021/07/Adaptivelearning-BlogFI-op2-1920x1080.jpg'); /* W3C */
+}
+#search{
+  width: 50%;
+  font-size: 2.8vw;
+  font-style: italic;
+  padding: 10px 10px;
+}
+.searchbutton{
+  width:55px;
+  height: 70px;
+  border: 1px solid grey;
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+}
+
+::placeholder {
+  font-size: 15px;
+  border: 2px;
+}
+.text{
+  color: black;
+  font-weight: bold;
+  font-size: 5vw;
+}
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height: 180px;
+  overflow-y: auto;
+  overflow-x: hidden;
+transform:rotate(-90deg) translateY(-100px);
+  transform-origin: right top;
+  -webkit-overflow-scrolling: touch;
+}
+.horizontal-scroll-wrapper > div {
+  width: 100px;
+  height: 200px;
+ transform: rotate(90deg);
+  transform-origin: right top;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cardLMS{
+  font-weight: bold;
+  font-family:'Roboto Slab';
+  text-align: center;
+}
+.DP{
+    margin-top: -28px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 3;
+}
+.peoplesay{
+  border-radius: 50%;
+  display: inline-block;
+}
+.comment{
+  float: left;
+  width: 20%;
+}
+.border{
+  float: left;
+  width: 5%;
+}
+.people{
+  float: left;
+  width: 20%;
+}
+.number{
+  border: 2px;
+}
+.material-icons {
+  vertical-align: middle;
+}
+.loc{
+  font-weight: bold;
+}
+.star-size {
+  font-size: 10px;
+}
+
+#fav:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#fav {
+  float: right;
+}
+
+/* @media (min-width: 34em) {
+  .card-columns {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+  }
+}
+
+@media (min-width: 48em) {
+  .card-columns {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+  }
+} */
+
+@media (min-width: 62em) {
+  .card-columns {
+      -webkit-column-count: 4;
+      -moz-column-count: 4;
+      column-count: 4;
+  }
+}
+.container {
+  padding: 2px 16px;
+}
+
+.line {
+    border: 0;
+    height: 1px;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.scrolling-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.cardslider {
+  display: inline-block;
+  height:100px;
+    width: 250px;
+}
+.cardP{
+  display: inline-block;
+  /* box-shadow: 2px 4px 8px 0 rgba(102, 100, 100, 0.4); */
+  transition: 0.3s;
+}
+.cardP:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+.heading{
+  font-family:'Roboto Slab';
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: block;
+    font-weight: bold;
+    margin-top: 3%;
+
+}
+.scrolling{
+ height: 150px;;
+}
+.currency{
+  float: right;
+  width: 40%;
+  color: red;
+}
+.nodiscount{
+  float: right;
+  width: 20%;
+  color: red;
+
+}
+.first-txt {
+  color: black;
+  font-weight: bold;
+  font-family:'Roboto Slab';
+  background-color: green;
+}
+.first-txt:hover{
+  color: orange;
+}
+.scnd-txt{
+  position: relative;
+  color:black;
+  font-weight: bold;
+  font-family:'Roboto Slab';
+  top: 40px;
+  left: 75px;
+  background-color: green;
+}
+.third-txt{
+  position: relative;
+  color:black;
+  font-weight: bold;
+  font-family:'Roboto Slab';
+  top: 40px;
+  left: 25px;
+  background-color: green;
+
+}
+.third-txt:hover{
+  color: orange;
+}
+.imgopa{
+  object-fit: cover;
+  fill-opacity: initial;
+}
+header{
+  background-color: black;
+}
+.scnd-txt:hover{
+  color: orange;
+}
+
+.horizental{
+  float: inline-end;
+}
+
+.space{
+  float: right;
+  width: 5%;
+}
+.free{
+  float: right;
+  width: 20%;
+  color: lightgreen;
+  font-weight: bold;
+}
+.up{
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+.popularcourses{
+  font-family: 'Roboto slab';
+  font-weight: bold;
+  margin-left: 2%;
+
+}
+.line{
+  border-bottom: 2px solid black;
+  width: 3%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+.coursename{
+  font-family: Robo;
+}
+
+
+.container1{
+  padding: 16px 32px;
+  display: inline-block;
+}
+.about{
+  background-color: black;
+
+}
+.edumafooter{
+
+   text-align: center;
+  grid-column: 0/3;
+}
+.footerright1{
+
+  color: #fff;
+  font-family:'Roboto Slab';
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+
+}
+.footTop{
+  margin-top: 10%;
+}
+.footTop1{
+  margin-top: 7%;
+}
+.footTop2{
+  margin-top: 5%;
+}
+.eve{
+  font-family:'Roboto Slab';
+  font-weight: bold;
+  margin-top: 5%;
+}
+.liststyle{
+  list-style: none;
+}
+.eve{
+  height: 200px;
+  width: auto;
+}
+.left{
+  float: left;
+  width :15%;
+  height: 100px;
+  margin-left: 40px;
+}
+.headings{
+  color:orange;
+
+  font-weight: 700;
+  font-size: 70px;
+}
+.heading2{
+  color:orange;
+  font-size: 20px;
+  display: inline-block;
+}
+.vl {
+  border-left: 1px solid black;
+  height: 50px;
+  margin-top: 1.5%;
+}
+.nextleft{
+  float: left;
+  width :40%;
+  height: 100px;
+}
+.headd:hover{
+  color: orange;
+}
+
+.headd{
+  font-family:'Roboto Slab';
+  font-weight: bold;
+}
+.right{
+  float: right;
+  height: 100px;
+
+}
+
+
+.top {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(45,51,57,0.95);
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.event-page-image
+{
+   height: 40vh;
+  background: linear-gradient( rgba(0,0,0,0.5) 0%,rgba(0,0,0, 0.5) 100%), url('https://eduma.thimpress.com/educationwp-2/wp-content/themes/eduma/images/bg-page.jpg') no-repeat   center; /* W3C */
+
+}
+.eventfont{
+  font-family: 'Roboto Slab';
+
+  top: 40%;
+  left: 5% ;
+  width: 60vh;
+    color: white;
+    line-height: 54px;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+    border-left: 4px solid yellow;
+
+
+}
+.home{
+  color: black;
+ border-top: 5%;
+ font-size: small;
+
+}
+.home:hover{
+  color: orange;
+}
+.eventsdiv{
+  top: 80%;
+  margin:70px;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  /* top: 10%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+@media only screen and (max-width:500px)
+{
+  /* For mobile phones: */
+
+  .eve{
+
+    height: 100vh;
+    width:90vh;
+   margin-left:5%;
+    display: grid;
+    text-align: justify;
+
+    grid-auto-rows: minmax(min-content, max-content);
+  }
+  .left {
+    display: grid;
+    grid-template-columns: auto 150px;
+   height: 100%;
+
+    text-align: center;
+
+  }
+  .vl {
+    background-color: black;
+    height: 0px;
+  }
+  .left div{
+    color:orange;
+
+    font-size: 40px;
+
+  }
+  .left div h1{
+
+
+    height: 5vh;
+  }
+  .left div p{
+    padding-top: 33%;
+  }
+
+  .right {
+    grid-row-start: 2;
+    grid-row-end:2 ;
+    height: fit-content;
+    align-self: 50vh;
+
+  }
+  .nextleft div{
+    width: 70vh;
+
+  }
+  .nextleft{
+
+
+    width :100%;
+    height: 100px;
+  }
+  .imgopa{
+    object-fit: cover;
+    fill-opacity: initial;
+  }
+
+  .people{
+    float: left;
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  .searchbut{
+    font-size: 10px;
+    width:20px;
+    padding: 12.5px;
+  }
+  .form-control-sm{
+    font-size: 20px;
+  }
+  .searchtext{
+    width:75%;
+    margin-left: 20%;
+  }
+
+  .cardslider {
+    display: inline-block;
+    height:100px;
+      width: 250px;
+  }
+  .cardP{
+    display: inline-block;
+    box-shadow: 2px 4px 8px 0 rgba(102, 100, 100, 0.4);
+    transition: 0.3s;
+  }
+  .cardP:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  }
+  .heading{
+    font-family:'Roboto Slab';
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+      font-weight: bold;
+      margin-top: 3%;
+
+  }
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .eve{
+
+    height: 100vh;
+    width: 70vh;
+
+    display: grid;
+
+    grid-auto-rows: minmax(min-content, max-content);
+  }
+  .left {
+    display: grid;
+    grid-template-columns: auto 150px;
+   height: 100%;
+
+    text-align: center;
+
+  }
+  .vl {
+    background-color: black;
+    height: 0px;
+  }
+  .left div{
+    color:orange;
+
+    font-size: 40px;
+
+  }
+  .left div h1{
+
+
+    height: 5vh;
+  }
+ .eventsimage{
+
+    height: fit-content;
+    width: fit-content;
+  }
+  .left div p{
+    padding-top: 33%;
+  }
+
+  .right {
+    grid-row-start: 2;
+    grid-row-end:2 ;
+    height: fit-content;
+    align-self: 50vh;
+
+  }
+  .nextleft div{
+    width: 70vh;
+
+  }
+  .nextleft{
+
+
+    width :100%;
+    height: 100px;
+  }
+
+}
+
+.searchbut{
+  font-size: 20px;
+  width:75px;
+  padding: 12.5px;
+}
+.form-control-sm{
+  font-size: 20px;
+}
+.searchtext{
+  width:50%;
+  margin-left: 20%;
+  border-color: white;
+}
+
+

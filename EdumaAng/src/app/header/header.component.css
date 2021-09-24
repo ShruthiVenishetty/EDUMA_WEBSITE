@@ -1,0 +1,47 @@
+@media (max-width: 767px)
+{
+.top{
+    min-height: initial;
+}
+}
+.top {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(45,51,57,0.95);
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.event-page-image
+{
+   height: 40vh;
+  background: linear-gradient( rgba(0,0,0,0.5) 0%,rgba(0,0,0, 0.5) 100%), url('https://eduma.thimpress.com/educationwp-2/wp-content/themes/eduma/images/bg-page.jpg') no-repeat   center; /* W3C */
+
+}
+.eventfont{
+  font-family:'Roboto Slab';
+  top: 40%;
+  left: 5% ;
+  width: 60vh;
+    color: white;
+    line-height: 54px;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+    border-left: 4px solid yellow;
+
+
+}
+.home{
+  color: black;
+ border-top: 5%;
+ font-size: small;
+
+}
+.home:hover{
+  color: orange;
+}

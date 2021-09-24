@@ -1,0 +1,73 @@
+.edumafooter{
+
+ grid-column: 0/3;
+}
+.footerright1{
+
+ color: #fff;
+ font-family:'Roboto Slab';
+
+}
+
+.about {
+ display: grid;
+ grid-template-columns: auto auto auto auto auto;
+ background-color: black;
+ background-size: cover;
+
+
+}
+.footTop{
+ margin-top: 10%;
+}
+.footTop1{
+ margin-top: 7%;
+}
+.footTop2{
+ margin-top: 5%;
+}
+.eve{
+ font-family: 'Times New Roman', Times, serif;
+ font-weight: bold;
+ margin-top: 5%;
+ margin-left: 5%;
+}
+.liststyle{
+ list-style: none;
+}
+@media only screen and (max-width:500px)
+{
+  .about{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+    width:100vh;
+
+
+  }
+  .footerright1{
+
+   color: #fff;
+   font-family:'Roboto Slab';
+  }
+
+}
+@media only screen and (max-width:767px)
+{
+  .about{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+    width:100vh;
+    background-size: cover;
+
+
+  }
+  .footerright1{
+
+   color: #fff;
+   font-family:'Roboto Slab';
+
+  }
+
+}

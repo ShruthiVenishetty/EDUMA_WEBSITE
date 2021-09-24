@@ -1,0 +1,118 @@
+  <div class="yellowDiv">
+   <h1 class="text-center text">Online Courses to Learn</h1>
+   <h4 class="text-center">Own your future learning new skills online</h4><br>
+
+    <form>
+      <div class="input-group">
+      <input class="form-control-md searchtext" type="text" placeholder=" What do you what to learn today?" name="search" width="50" autocomplete="off" >
+      <div class="input-group-btn">
+      <button class=" btn btn-dark searchbut" type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    </div>
+     </form>
+  <br>
+
+    <ul class="text-center list-inline">
+      <li class="list-inline-item"><i class="fa fa-graduation-cap"></i>&nbsp;<a href="#">Over 7 million students.</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+     <li class="list-inline-item"><i class="fa fa-rebel"></i>&nbsp;<a href="#">More than 30,000 courses.</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+    <li class="list-inline-item"><i class="fa fa-paper-plane"></i>&nbsp;<a href="https://themeforest.net/item/education-wordpress-theme-education-wp/14058034?ref=ThimPress&utm_source=demo&utm_medium=demofooter">Learn anything online.</a></li>
+    </ul>
+
+  </div><br>
+
+  <div class="container">
+  <div class="scrolling-wrapper">
+    <div class="cardslider thim-course-slider">
+    <div class="cardslider imgopa"><img src="https://eduma.thimpress.com/wp-content/uploads/sites/18/2015/12/1.jpg" alt="BACKEND" width="200" height="100"></div>
+    <div class="cardslider img-fluid imgopa"><img src="https://eduma.thimpress.com/wp-content/uploads/sites/18/2015/12/2.jpg" alt="CSS" width="200" height="100"></div>
+    <div class="cardslider img-fluid imgopa"><img src="https://eduma.thimpress.com/wp-content/uploads/sites/18/2015/12/3.jpg" alt="FRONTEND" width="200" height="100"></div>
+    <div class="cardslider img-fluid imgopa"><img src="https://eduma.thimpress.com/wp-content/uploads/sites/18/2015/12/4.jpg" alt="GENERAL" width="200" height="100"></div>
+    <div class="cardslider img-fluid imgopa"><img src="https://eduma.thimpress.com/wp-content/uploads/sites/18/2015/12/5.jpg" alt="IT & Software" width="200" height="100"></div>
+    <div class="cardslider img-fluid imgopa"><img src="https://eduma.thimpress.com/wp-content/uploads/sites/18/2015/12/6.jpg" alt="Photography" width="200" height="100"></div>
+    <div class="cardslider img-fluid imgopa"><img src="https://eduma.thimpress.com/wp-content/uploads/sites/18/2015/12/7.jpg" alt="PROGRAMMING" width="200" height="100"></div>
+    <div class="cardslider img-fluid imgopa"><img src="https://eduma.thimpress.com/wp-content/uploads/sites/18/2015/12/8.jpg" alt="TECHNOLOGY" width="200" height="100"></div>
+  </div>
+</div>
+</div>
+<hr>
+
+<h2 class="popularcourses">POPULAR COURSES</h2><br>
+<p class="line"></p>
+<div class="row m-3">
+  <div class="col-lg-3 mb-3" *ngFor="let courses of this.listCourse; let i=index">
+
+    <div class="card" *ngIf="i < 4" (click)="onCourses(courses.courseId)">
+      <img src={{courses.imageUrl}} class="card-img-top" alt="Background Image"><div class="middle">READ MORE</div>
+      <div class="text-center mb-0"><img alt="Anthony" src={{courses.profilePicUrl}} class="DP" height="50" width="50"><h6 class="card-title pt-3 pl-3">{{courses.instructorName}}</h6></div>
+        <div class="card-body">
+          <h5 class="card-title text-center coursename">{{courses.courseName}}</h5>
+          <hr>
+          <div class="people text-muted">
+            <i class="fa fa-group"></i>&nbsp;{{courses.studentCount}}
+          </div>
+          <div class="comment text-muted">
+              <i class="fa fa-comment"></i>&nbsp;{{courses.commentsCount}}
+          </div>
+          <div class="free" *ngIf="!courses.actualPrice">Free
+          </div>
+          <div *ngIf="courses.actualPrice && courses.discountedPrice"><h6 class="currency"><s>{{courses.actualPrice | currency}}</s>{{courses.discountedPrice | currency}}</h6>
+          </div>
+          <div class="nodiscount" *ngIf="courses.actualPrice && !courses.discountedPrice"><h6>{{courses.actualPrice | currency}}</h6>
+          </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div>
+  <h1 class="container-fluid heading">EVENTS</h1>
+  <p class="container-fluid text-muted">Upcoming Education Events to feed your brain.</p>
+  <p class="line"></p>
+<div *ngFor="let event of this.eventList; let i=index">
+  <div class="eve" *ngIf="i < 3">
+  <div class="left">
+      <div><h1 class="headings">{{event.startDate | date:'dd'}}</h1></div>
+      <div><p class="heading2">{{event.startDate | date:'MMMM'}}</p></div>
+  </div>
+  <div class="vl left">
+  </div>
+
+  <div class="right">
+      <img src={{event.imageUrl}} class="eventsimage" height="120"width="230">
+  </div>
+  <div class="nextleft">
+    <h4 class="headd">{{event.eventName}}</h4>
+  <p class="text-muted loc">
+      <i class="fa fa-clock-o"></i> {{event.startDate| date: 'shortTime'}} - {{event.endDate| date: 'shortTime'}}&nbsp;
+      <i class="fa fa-map-marker"></i> {{event.location}}
+    </p>
+ <p>{{event.about}}</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="text-center">
+  <h1>WHAT PEOPLE SAY</h1>
+  <h6 class="text-muted">How real people said about Education WordPress Theme.</h6><br>
+  <div class="container">
+    <div>
+      <div class="thim-course-slider">
+      <div class="imgopa"><img src="https://eduma.thimpress.com/demo-2/wp-content/uploads/sites/18/2015/11/peter-100x100.jpg" alt="BACKEND" width="100" height="100" class="peoplesay">
+      <img src="https://eduma.thimpress.com/demo-2/wp-content/uploads/sites/18/2015/11/manuel-100x100.jpg" alt="CSS" width="100" height="100"  class="peoplesay">
+      <img src="https://eduma.thimpress.com/demo-2/wp-content/uploads/sites/18/2015/11/john-doe-100x100.jpg" alt="FRONTEND" width="100" height="100" class="peoplesay">
+      <img src="https://eduma.thimpress.com/demo-2/wp-content/uploads/sites/18/2015/11/elsie-100x100.jpg" alt="GENERAL" width="100" height="100" class="peoplesay">
+      <img src="https://eduma.thimpress.com/demo-2/wp-content/uploads/sites/18/2015/11/anthony-100x100.jpg" alt="IT & Software" width="100" height="100" class="peoplesay"></div>
+
+    </div>
+  </div>
+  </div>
+
+</div>
+<br><br>
+
+

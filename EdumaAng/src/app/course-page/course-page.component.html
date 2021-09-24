@@ -1,0 +1,77 @@
+<app-header></app-header>
+<hr>
+<div class="container">
+  <h2 class="nameheading">{{course?.courseName}}</h2>
+  <div class="row courseheadings">
+    <div class="col-lg-1">
+      <img src={{course?.profilePicUrl}} height="40" width="40" class="profilepic">
+  </div>
+  <div class="col-lg-1 contentfit">
+    <ul class="list-unstyled">
+      <li class="headingcourse">Teacher</li>
+      <li class="valuesfromcourse">{{course?.instructorName}}</li>
+    </ul></div>
+  <div class="col-lg-1 contentfit">
+    <ul class="list-unstyled">
+      <li class="headingcourse fontcat">Categories</li>
+      <li class="valuesfromcourse">{{course?.categories}}</li>
+    </ul></div>
+    <div class="col-lg-4">
+      <ul class="list-unstyled">
+        <li class="headingcourse">Review</li>
+      <rating [(ngModel)]="value"
+          [max]=5
+          [readonly]="true"
+          [titles]="['one','two','three','four','five']"></rating><span class="valuesfromcourse">({{course?.reviewCount}} REVIEWS)</span>
+      </ul></div>
+      <!-- <div class="col-lg-2 free text-center" >{{course?.actualPrice}} -->
+        <div class="col-lg-2 free text-center" *ngIf="!course?.actualPrice">Free
+        </div>
+        <div class="col-lg-2 nodiscount text-center" *ngIf="course?.actualPrice && course?.discountedPrice"><h2 class="price"><s>{{course?.actualPrice | currency}}</s>{{course?.discountedPrice | currency}}</h2>
+        </div>
+        <div class="col-lg-2 text-center nodiscount" *ngIf="course?.actualPrice && !course?.discountedPrice"><h2 class="price">{{course?.actualPrice | currency}}</h2>
+        </div>
+      <!-- </div> -->
+  </div>
+  <img src={{course?.imageUrl}}>
+  <div class="row mt-5">
+    <div class="col-lg-6">
+  <h4 class="name">COURSE DESCRIPTION</h4>
+  <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry’s standard dummy text ever since the
+    1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book. It has survived not only five centuries, but also
+    the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <h4 class="name">CERTIFICATION</h4>
+    <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry’s standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but also
+      the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <h4 class="name">LEARNING OUTCOMES</h4>
+      <ul>
+        <li>Over 37 lectures and 55.5 hours of content!</li>
+        <li>Testing Training Included.</li>
+        <li>Learn Software Testing and Automation basics from a professional trainer from your own desk.</li>
+        <li>Information packed practical training starting from basics to advanced testing techniques.</li>
+        <li>Best suitable for beginners to advanced level users and who learn faster when demonstrated.</li>
+        <li>Course content designed by considering current software testing technology and the job market.</li>
+        <li>Practical assignments at the end of every session.</li>
+        <li>Practical learning experience with live project work and examples.</li>
+      </ul>
+      </div>
+      <div class="col-lg-3">
+        <h3 class="title">COURSE FEATURES</h3>
+        <ul class="features list-unstyled">
+          <li class="lectures-feature"><i class="fa fa-files-o"></i><span class="label"> Lectures</span><span class="value">{{course?.lecturesCount}}</span></li>
+        <li class="quizzes-feature"><i class="fa fa-puzzle-piece"></i><span class="label"> Quizzes</span><span class="value">{{course?.quizzes}}</span></li>
+        <li class="duration-feature"><i class="fa fa-clock-o"></i><span class="label"> Duration</span><span class="value">{{course?.durationInHours}}</span></li>
+        <li class="skill-feature"><i class="fa fa-level-up"></i><span class="label"> Skill Level</span><span class="value">{{course?.skillLevel}}</span></li>
+        <li class="language-feature"><i class="fa fa-language"></i><span class="label"> Language</span><span class="value">{{course?.language}}</span></li>
+        <li class="students-feature"><i class="fa fa-users"></i><span class="label"> Students</span><span class="value">{{course?.studentCount}}</span></li>
+        <li class="cert-feature"><i class="fa fa-rebel"></i><span class="label"> Certificate</span><span class="value">{{course?.certificate}}</span></li>
+        <li class="assessments-feature"><i class="fa fa-check-square-o"></i><span class="label"> Assessments</span><span class="value">{{course?.assessments}}</span></li></ul>
+      </div>
+    </div>
+</div>
+

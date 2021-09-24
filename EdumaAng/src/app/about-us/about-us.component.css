@@ -1,0 +1,87 @@
+.line{
+  border-bottom: 1px solid #999999;
+  width: 4%;
+  text-align: center;
+  margin-left: 48%;
+
+}
+.textmsg{
+  margin-top:5%;
+  margin-left: 20%;
+ width: 60%;
+ margin-bottom: 5%;
+ color: #999999;
+}
+.lastline{
+  border-bottom: 1px solid orange;
+  width: 8%;
+  text-align: center;
+  margin-left: 46%;
+  margin-bottom: 5%;
+
+}
+.divide{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width:100%;
+  height: 70vh;
+  grid-gap:10px;
+}
+.divideContact{
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+.divideInfo{
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+
+}
+.aboutfont{
+  font-family:'Roboto Slab';
+  font-size: 18px;
+  font-weight: bold;
+  margin-left:5%;
+}
+.abouttext{
+  color:#666666;
+}
+.aboutline{
+  border-left:3px solid orange;
+  height:7%;
+}
+@media only screen and (max-width:500px)
+{
+  .divide{
+    display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  height: fit-content;
+
+  }
+  .divideContact{
+
+   grid-column-start: 1;
+   grid-column-end: 2;
+  }
+  .divideInfo{
+grid-column-start: 1;
+grid-column-end: 2;
+
+
+  }
+  .aboutfont{
+    font-family:'Roboto Slab';
+    font-size: 18px;
+  font-weight: bold;
+  margin-left:5%;
+  }
+  .abouttext{
+    color:#666666;
+  }
+  .aboutline{
+    border-left:3px solid orange;
+    height:10%;
+  }
+}
